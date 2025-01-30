@@ -11,6 +11,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './styles.css';
 
+import { BLOG_TITLE } from '@/constants';
+
 const mainFont = Work_Sans({
   subsets: ['latin'],
   display: 'fallback',
@@ -23,6 +25,11 @@ const monoFont = Spline_Sans_Mono({
   weight: 'variable',
   variable: '--font-family-mono',
 });
+
+export const metadata = {
+	title: BLOG_TITLE,
+	description: 'A wonderful blog about JavaScript',
+};
 
 function RootLayout({ children }) {
   // TODO: Dynamic theme depending on user preference
