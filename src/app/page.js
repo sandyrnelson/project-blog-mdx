@@ -19,7 +19,6 @@ function Home() {
 
 async function Blogs() {
 	const blogs = await getBlogPostList();
-	console.log(blogs);
 
 	return blogs.map((blog) => (
 		<BlogSummaryCard
